@@ -3,7 +3,7 @@ let score = 0
 let userPlays = 0
 let cup = document.querySelector(".cuppa");
 let bean = document.querySelector(".bean");
-
+let hiddenScreen = document.querySelector('.shadowScrn')
 let formHold = document.querySelector('.formContainer')
 if(userPlays > 3 ){
     cup.remove()
@@ -25,6 +25,17 @@ const dailyAffirmations = [
     "I am deserving of all the wonderful things life has to offer."
   ];
 
+const infoDump ={
+    locations: ["Historic Lakewood", "Morehouse College"],
+    contact: "000-000-0000",
+    testimonials: "Good Vibes, Great Coffee",
+    hoursOp: "Monday - Friday (7A - 6P) "
+
+}
+
+const shareInfo = (info)=>{
+hiddenScreen.innerHTML = info
+}
 const updateScore = () =>{
     let scoreUpdate = document.querySelector('.scoreKeeper')
     scoreUpdate.innerHTML = score

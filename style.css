@@ -218,3 +218,36 @@
   border-radius: 50%;
 }
 
+.woffordContainer{
+  border:solid black;
+  /* height:32px; */
+  margin:1em;
+}
+.local{
+  /* border:solid navy; */
+  /* margin:1em; */
+}
+.north,.south{
+  /* border:solid blue; */
+  /* height:22px; */
+  display:flex;
+  justify-content: space-evenly;
+  margin:1em;
+}
+.selectItem{
+  border:.2px solid black;
+  width:40%;
+  text-align:center
+}
+.selectItem:hover{
+  border:.2px solid black;
+  width:40%;
+  text-align:center;
+  -webkit-box-shadow: 1px 6px 16px 3px #834315; 
+box-shadow: 1px 6px 16px 3px #834315;
+}
+
+.shadowScrn{
+  text-align:center;
+  color:white;
+}
