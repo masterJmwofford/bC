@@ -1,0 +1,136 @@
+@keyframes blinkAnimation {
+  50% {
+      opacity: 0;
+  }
+}
+@keyframes snowFall {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    
+    opacity: 0.8;
+  }
+  100% {
+    /* transform: translateX(-20px); */
+    transform: translateX(20px) translateY(60vh);
+    width:1px;
+    opacity: 0;
+  }
+}
+
+
+@media (max-width: 1490px) {
+  body {
+    background-color: black;
+  }
+  .coffeeCup {
+    opacity: 0.3;
+    width: 60%;
+  }
+}
+@media (max-width: 990px) {
+  body {
+    background-color: burlywood;
+  }
+  .coffeeCup {
+    opacity: 0.3;
+    width: 40%;
+  }
+}
+@media (max-width: 690px) {
+  body {
+    background-color: peru;
+  }
+  .coffeeCup {
+    opacity: 0.3;
+    width: 100%;
+  }
+}
+
+.navContainer {
+  border: 0.2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tabContainer {
+  /* border:solid red; */
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+.logo {
+  height: 50px;
+}
+
+.javaContainer {
+  border: 0.2px solid black;
+  display: flex;
+  /* background-image: url('https://media3.giphy.com/media/azqIclO2IYLqBbGJAT/giphy.gif?cid=6c09b9522i7vwh72tl1943xmrq0o17t8hi6zzqiwmr62sqxl&ep=v1_gifs_search&rid=giphy.gif&ct=g'); */
+  background-size: cover;
+  opacity: 0.3;
+}
+.hiddenTool {
+  border: solid red;
+  display: none;
+}
+.optionContainer {
+  border: 0.2px solid black;
+  height: 55vh;
+  margin: 1em;
+}
+
+.catcherCup {
+  /* margin-top: 25vh; */
+  height:150px;
+}
+.coffeebean {
+    position: absolute;
+    top: 350px; /* Start slightly above the viewport */
+    left: 50%; /* Center horizontally (can be randomized for multiple snowflakes) */
+    width: 30px; /* Size of the snowflake */
+    height: 30px;
+    opacity: 1;
+    animation: snowFall 5s linear infinite; /* Adjust duration for speed */
+    margin:1em;
+}
+.test{
+    border:solid green;
+    height:22px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.spacer{
+    height:200px;
+}
+.cafeController{
+  border:solid black;
+  display:flex;
+  justify-content: space-evenly;
+
+}
+.savingsBlock{
+  border:solid peru;
+  display:flex;
+  justify-content: space-evenly;
+  font-size:25px;
+}
+
+.insertPH{
+  border: .2px solid white;
+  margin:.3em;
+  width:40px;
+  color:burlywood;
+  text-align:center;
+  
+}
+.scoreboard{
+  border:solid white;
+  color:burlywood;
+  
+  display:flex;
+  justify-content: space-between;
+  background-color: black;
+}
