@@ -5,7 +5,7 @@
 }
 @keyframes snowFall {
   0% {
-    transform: translateX(0) translateY(0);
+    transform: translateX(-10) translateY(-10);
     opacity: 1;
   }
   50% {
@@ -14,7 +14,7 @@
   }
   100% {
     /* transform: translateX(-20px); */
-    transform: translateX(20px) translateY(60vh);
+    transform: translateX(0px) translateY(30vh);
     width:1px;
     opacity: 0;
   }
@@ -28,6 +28,7 @@
   .coffeeCup {
     opacity: 0.3;
     width: 60%;
+    height:122px;
   }
 }
 @media (max-width: 990px) {
@@ -79,7 +80,7 @@
 .optionContainer {
   border: 0.2px solid black;
   height: 55vh;
-  margin: 1em;
+  margin: 1.2em;
 }
 
 .catcherCup {
@@ -130,18 +131,20 @@
   border:solid white;
   color:burlywood;
   
-  display:flex;
+  /* display:flex; */
   justify-content: space-between;
   background-color: black;
 }
 .splasher{
-  border: 6px double white;
+  border:solid white;
   width:100%;
 }
 .formContainer{
   border:solid peru;
   margin:1em;
   width:50%;
+  text-align:center;
+  padding:12px;
 
 }
 .holderContainer{
