@@ -4,6 +4,21 @@ let score = 0
 let cup = document.querySelector(".cuppa");
 let bean = document.querySelector(".bean");
 
+let formHold = document.querySelector('.formContainer')
+
+const dailyAffirmations = [
+    "I am worthy of love and respect.",
+    "I have the power to create change.",
+    "I am resilient, strong, and brave.",
+    "I embrace the greatness within me.",
+    "I choose to be happy right now.",
+    "I am in charge of my thoughts and emotions.",
+    "I am grateful for the good in my life.",
+    "I believe in my abilities and express my true self with ease.",
+    "I am growing and becoming a better version of myself.",
+    "I am deserving of all the wonderful things life has to offer."
+  ];
+
 const updateScore = () =>{
     let scoreUpdate = document.querySelector('.scoreKeeper')
     scoreUpdate.innerHTML = score
@@ -41,6 +56,18 @@ function toggleImageBlink(blink) {
 
 // Example usage:
 // Call toggleImageBlink(true) to make all images blink
+
+
+const generateAffirmation = ()=>{
+    let random = Math.floor(Math.random() * (17 - 0) + 0)
+
+    let quote = dailyAffirmations[random]
+    console.log(quote)
+    formHold.innerHTML =  quote
+    if(quote === undefined){
+        quote = "You Are the MFN Blueprint"
+    }
+}
 
 function trackAndAlertOverlap(selector1, selector2) {
     const element1 = document.querySelector(selector1);
@@ -143,3 +170,7 @@ function makeMovable(selector) {
 }
 makeMovable('.catcherCup')
 
+
+setInterval(()=>{
+    generateAffirmation()
+},5000)

@@ -88,7 +88,7 @@
 }
 .coffeebean {
     position: absolute;
-    top: 350px; /* Start slightly above the viewport */
+    top: 89vh; /* Start slightly above the viewport */
     left: 50%; /* Center horizontally (can be randomized for multiple snowflakes) */
     width: 30px; /* Size of the snowflake */
     height: 30px;
@@ -133,4 +133,18 @@
   display:flex;
   justify-content: space-between;
   background-color: black;
+}
+.splasher{
+  border: 6px double white;
+  width:100%;
+}
+.formContainer{
+  border:solid peru;
+  margin:1em;
+  width:50%;
+
+}
+.holderContainer{
+  border:solid black;
+  display:flex;
 }
