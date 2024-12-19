@@ -1,3 +1,4 @@
+alert("Will Continue Posting Updates for the 3X BlackCoffee Dope Hoodie....  ")
 let screen = document.querySelector(".optionContainer");
 let score = 0
 let userPlays = 0
@@ -164,11 +165,11 @@ const promoCodeDisplay = document.querySelector(".promo-code-display");
 
 // Game Variables
 const collectedCharacters = new Set();
-const totalNeeded = 20;
+const totalNeeded = 10;
 
 // Utility Functions
 const generateRandomCharacter = () => {
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    const chars = "BLACKCOFFEEATLANTA";
     return chars[Math.floor(Math.random() * chars.length)];
 };
 
