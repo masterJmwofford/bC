@@ -1,10 +1,16 @@
 let screen = document.querySelector(".optionContainer");
 let score = 0
-
+let userPlays = 0
 let cup = document.querySelector(".cuppa");
 let bean = document.querySelector(".bean");
 
 let formHold = document.querySelector('.formContainer')
+if(userPlays > 3 ){
+    cup.remove()
+}
+let promoCode = "AP763"
+let currentChar = promoCode[1];
+let queue = document.querySelector('.savingsBlock')
 
 const dailyAffirmations = [
     "I am worthy of love and respect.",
@@ -29,44 +35,12 @@ updateScore()
 
 let shouldBlink = false; // This is the boolean value
 
-function toggleImageBlink(blink) {
-    if (!blink || shouldBlink) return; // Avoid re-triggering if already blinking or `blink` is false
-
-    shouldBlink = true; // Set the boolean to true
-    const allImages = document.querySelectorAll(".insertPH"); // Select all <img> tags
-
-    // Apply the blink effect
-    allImages.forEach(img => {
-        img.style.animation = "blinkAnimation 0.3s step-start infinite";
-    });
-
-    // Stop the blink effect after 3 seconds
-    setTimeout(() => {
-        allImages.forEach(img => {
-            img.style.animation = ""; // Reset the animation
-        });
-        shouldBlink = false; // Reset the boolean value to false
-    }, 3000);
-}
-
-// CSS Animation (You need to add this in your CSS file or within a <style> tag)
-/*
-
-*/
-
-// Example usage:
-// Call toggleImageBlink(true) to make all images blink
-
 
 const generateAffirmation = ()=>{
-    let random = Math.floor(Math.random() * (17 - 0) + 0)
-
-    let quote = dailyAffirmations[random]
+    let random = Math.floor(Math.random() * (dailyAffirmations.length - 0) + 0)
+    let quote = dailyAffirmations[random]   
     console.log(quote)
-    formHold.innerHTML =  quote
-    if(quote === undefined){
-        quote = "You Are the MFN Blueprint"
-    }
+    formHold.innerHTML = quote;
 }
 
 function trackAndAlertOverlap(selector1, selector2) {
@@ -87,9 +61,8 @@ function trackAndAlertOverlap(selector1, selector2) {
             Math.round(rect1.x) === Math.round(rect2.x) ||
             Math.round(rect1.y) === Math.round(rect2.y)
         ) {
-            score++
+            score += .5
             updateScore()
-            toggleImageBlink(true);
            
         }
     }
@@ -106,9 +79,7 @@ const stopTracking = trackAndAlertOverlap(".catcherCup", ".coffeebean");
 
 // To stop tracking later, call stopTracking
 
-let promoCode = "AP763"
-let currentChar = promoCode[0];
-let queue = document.querySelector('.savingsBlock')
+
 const providePromoCode = (promoCode)=>{
   let chopped = promoCode.split("")
   chopped.map((code)=>{
@@ -118,7 +89,7 @@ const providePromoCode = (promoCode)=>{
     queue.append(promoPH)
   })
 }
-providePromoCode(promoCode)
+// providePromoCode(promoCode)
 
 function makeMovable(selector) {
   const element = document.querySelector(selector);
@@ -173,4 +144,102 @@ makeMovable('.catcherCup')
 
 setInterval(()=>{
     generateAffirmation()
-},5000)
+},3500)
+// -------game
+// HTML Elements
+const container = document.querySelector(".game-container");
+const primaryImage = document.querySelector(".catcherCup");
+const promoCodeDisplay = document.querySelector(".promo-code-display");
+
+// Game Variables
+const collectedCharacters = new Set();
+const totalNeeded = 20;
+
+// Utility Functions
+const generateRandomCharacter = () => {
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    return chars[Math.floor(Math.random() * chars.length)];
+};
+
+const createFallingObject = () => {
+    const fallingObject = document.createElement("div");
+    fallingObject.classList.add("intractable");
+    fallingObject.textContent = generateRandomCharacter();
+
+    // Random initial position
+    fallingObject.style.left = `${Math.random() * (container.offsetWidth - 30)}px`;
+    fallingObject.style.top = "0px";
+
+    container.appendChild(fallingObject);
+    return fallingObject;
+};
+
+const detectCollision = (object, movable) => {
+    const objRect = object.getBoundingClientRect();
+    const imgRect = movable.getBoundingClientRect();
+    return !(
+        objRect.top > imgRect.bottom ||
+        objRect.bottom < imgRect.top ||
+        objRect.left > imgRect.right ||
+        objRect.right < imgRect.left
+    );
+};
+
+const moveFallingObjects = () => {
+    const fallingObjects = document.querySelectorAll(".intractable");
+    fallingObjects.forEach((object) => {
+        const currentTop = parseFloat(object.style.top);
+        object.style.top = `${currentTop + 5}px`;
+
+        // Check for collision
+        if (detectCollision(object, primaryImage)) {
+            const char = object.textContent;
+            collectedCharacters.add(char);
+            object.remove();
+
+            // Update Promo Code Display
+            promoCodeDisplay.textContent = Array.from(collectedCharacters).join("");
+
+            // Check if game is won
+            if (collectedCharacters.size === totalNeeded) {
+                alert("Awesome! You have now earned 2points towards your next Drip!: " + Array.from(collectedCharacters).join(""));
+                userPlays++
+                totalNeeded = -10
+            }
+        }
+
+        // Remove objects that fall beyond the container
+        if (currentTop > container.offsetHeight) {
+            object.remove();
+        }
+    });
+};
+
+// Movable Image Movement
+const movePrimaryImage = (event) => {
+    const key = event.key;
+    const step = 20; // Movement step
+    const rect = primaryImage.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
+
+    if (key === "ArrowLeft" && rect.left > containerRect.left) {
+        primaryImage.style.left = `${rect.left - step}px`;
+    } else if (key === "ArrowRight" && rect.right < containerRect.right) {
+        primaryImage.style.left = `${rect.left + step}px`;
+    }
+};
+
+// Game Loop
+const gameLoop = () => {
+    moveFallingObjects();
+
+    // Generate a new object occasionally
+    if (Math.random() < 0.02) {
+        createFallingObject();
+    }
+    requestAnimationFrame(gameLoop);
+};
+
+// Initialize Game
+document.addEventListener("keydown", movePrimaryImage);
+gameLoop();
