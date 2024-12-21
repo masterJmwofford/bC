@@ -43,6 +43,7 @@ body {
   }
   .holderContainer {
     /* border:solid black; */
+    width:50%;
     display: block;
   }
   .woffordContainer {
@@ -52,7 +53,7 @@ body {
     margin-top: 4em;
   }
   .logoBank {
-    border: 0.2px solid burlywood;
+    /* border: 0.2px solid burlywood; */
     width: auto;
     align-items: center;
     padding: 2px;
@@ -64,14 +65,29 @@ body {
     justify-content: space-evenly;
     border: 0.2px solid white;
     margin: 1em;
+    font-size:32px;
   }
   .viewContainer{
     border:solid burlywood;
-    width:60%;
+    width:90%;
     border-width:.2px;
-  border-radius:22px;
+  border-radius:0;
   background-image:url('https://i.gifer.com/origin/e6/e6e1a052277f8e381ab7b8250493c017.gif');
   background-size: cover;
+  }
+  .spaceGod {
+    margin: .2em;
+    display: flex;
+    justify-content: space-between;
+    /* height:44vh; */
+    
+  }
+  .selectItem {
+    border: 6px double black;
+    width: 40%;
+    color: burlywood;
+    font-size: 22px;
+    text-align: center;
   }
 }
 @media (max-width: 990px) {
@@ -89,7 +105,7 @@ body {
   }
   .splasher {
     /* border:solid white; */
-    width: 50%;
+    width:60%;
   }
   .holderContainer {
     display: block;
@@ -102,7 +118,7 @@ body {
     margin-top: 4em;
   }
   .logoBank {
-    border: 0.2px solid burlywood;
+    /* border: 0.2px solid burlywood; */
     width: 40%;
     align-items: center;
     padding: 2px;
@@ -113,14 +129,29 @@ body {
     justify-content: space-evenly;
     border: 0.2px solid white;
     margin: 1em;
+    font-size:32px;
   }
   .viewContainer {
     border: solid burlywood;
     width: 60%;
     border-width: 0.2px;
-    border-radius: 22px;
+    border-radius: 0;
     background-image: url("https://i.gifer.com/origin/e6/e6e1a052277f8e381ab7b8250493c017.gif");
     background-size: cover;
+  }
+  .spaceGod {
+    margin: .2em;
+    display: flex;
+    justify-content: space-between;
+    /* height:44vh; */
+    
+  }
+  .selectItem {
+    border: 6px double black;
+    width: 40%;
+    color: burlywood;
+    font-size: 12px;
+    text-align: center;
   }
 }
 @media (max-width: 690px) {
@@ -153,24 +184,42 @@ body {
     margin-top: 0;
   }
   .logoBank {
-    border: 0.2px solid burlywood;
+    /* border: 0.2px solid burlywood; */
     width: auto;
     align-items: center;
     padding: 2px;
-    display: block;
+    display: flex;
   }
   .logoGod {
-    display: block;
+    display: flex;
+    width:33%;
     /* border: 0.2px solid white; */
     margin: 0;
+    font-size:32px;
+
   }
   .viewContainer {
     border: solid burlywood;
-    width: 90%;
+    width: 100%;
+    height:34vh;
     border-width: 0.2px;
-    border-radius: 22px;
+    border-radius: 0;
     background-image: url("https://i.gifer.com/origin/e6/e6e1a052277f8e381ab7b8250493c017.gif");
     background-size: cover;
+  }
+  .spaceGod {
+    margin: .2em;
+    display: block;
+    justify-content: space-between;
+    /* height:44vh; */
+    
+  }
+  .selectItem {
+    border: 6px double black;
+    width: 40%;
+    color: burlywood;
+    font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -315,13 +364,7 @@ body {
   justify-content: space-evenly;
   margin: 1em;
 }
-.selectItem {
-  border: 6px double black;
-  width: 40%;
-  color: burlywood;
-  font-size: 12px;
-  text-align: center;
-}
+
 .selectItem:hover {
   border: 0.2px solid black;
   width: 40%;
@@ -361,14 +404,7 @@ body {
   color: burlywood;
   width: 70%;
 }
-.spaceGod {
-  border: 0.2px solid black;
-  margin: 1em;
-  display: flex;
-  justify-content: space-between;
-  /* height:44vh; */
-  padding: 1em;
-}
+
 
 .logoGod:hover {
   /* border:solid burlywood; */
