@@ -1,6 +1,6 @@
 @keyframes blinkAnimation {
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 @keyframes snowFall {
@@ -9,89 +9,104 @@
     opacity: 1;
   }
   50% {
-    
     opacity: 0.8;
   }
   100% {
     /* transform: translateX(-20px); */
     transform: translateX(0px) translateY(30vh);
-    width:1px;
+    width: 1px;
     opacity: 0;
   }
-  
 }
 
-body{
-  padding:.5em;
+body {
+  padding: 0.5em;
 }
 @media (max-width: 1490px) {
   body {
-    font-family:Cinzel;
+    font-family: Cinzel;
     background-color: rgb(109, 71, 40);
   }
   .coffeeCup {
     opacity: 0.3;
     width: 60%;
-    height:122px;
+    height: 122px;
   }
-  .cafeHold{
-    border:solid black;
-    display:flex;
+  .cafeHold {
+    border: solid black;
+    display: flex;
   }
-  .splasher{
+  .splasher {
     /* border:solid white; */
-    width:60%;
+    width: 60%;
   }
-  .holderContainer{
+  .holderContainer {
     /* border:solid black; */
-    display:block;
+    display: block;
+  }
+  .woffordContainer {
+    border: solid black;
+    /* height:32px; */
+    width:100%;
+    margin-top: 4em;
   }
 }
 @media (max-width: 990px) {
   body {
-    font-family:Cinzel;
+    font-family: Cinzel;
     background-color: rgb(109, 71, 40);
   }
   .coffeeCup {
     opacity: 0.3;
     width: auto;
-    height:auto;
+    height: auto;
   }
-  .cafeHold{
-    display:flex;
+  .cafeHold {
+    display: flex;
   }
-  .splasher{
+  .splasher {
     /* border:solid white; */
-    width:50%;
+    width: 50%;
   }
-  .holderContainer{
-
-    display:block;
+  .holderContainer {
+    display: block;
+    width: 100%;
+  }
+  .woffordContainer {
+    /* border: solid black; */
+    /* height:32px; */
     width:100%;
+    margin-top: 4em;
   }
 }
 @media (max-width: 690px) {
   body {
     background-color: rgb(109, 71, 40);
-    color:white;
-    font-family:Cinzel;
+    color: white;
+    font-family: Cinzel;
   }
   .coffeeCup {
     opacity: 0.3;
     width: auto;
-    height:auto;
+    height: auto;
   }
-  .cafeHold{
-    display:block;
+  .cafeHold {
+    display: block;
   }
-  .splasher{
+  .splasher {
     /* border:solid white; */
-    width:100%;
+    width: 100%;
   }
-  .holderContainer{
+  .holderContainer {
     /* border:solid black; */
-    display:flex;
+    display: flex;
+    width: 100%;
+  }
+  .woffordContainer {
+    border: solid black;
+    /* height:32px; */
     width:100%;
+    margin-top: 0;
   }
 }
 
@@ -104,11 +119,12 @@ body{
 .tabContainer {
   /* border:solid red; */
   display: flex;
+  color:burlywood;
   justify-content: space-around;
-  width: 45%;
+  width: 105%;
 }
 .logo {
-  height: 50px;
+  height: 80px;
 }
 
 .javaContainer {
@@ -130,68 +146,65 @@ body{
 
 .catcherCup {
   margin-top: 50%;
-  height:150px;
+  height: 150px;
 }
 .coffeebean {
-    position: absolute;
-    top: 89vh; /* Start slightly above the viewport */
-    left: 50%; /* Center horizontally (can be randomized for multiple snowflakes) */
-    width: 30px; /* Size of the snowflake */
-    height: 30px;
-    opacity: 1;
-    animation: snowFall 5s linear infinite; /* Adjust duration for speed */
-    margin:1em;
+  position: absolute;
+  top: 89vh; /* Start slightly above the viewport */
+  left: 50%; /* Center horizontally (can be randomized for multiple snowflakes) */
+  width: 30px; /* Size of the snowflake */
+  height: 30px;
+  opacity: 1;
+  animation: snowFall 5s linear infinite; /* Adjust duration for speed */
+  margin: 1em;
 }
-.test{
-    border:solid green;
-    height:22px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.spacer{
-    height:200px;
-}
-.cafeController{
-  border:.2px solid white;
-  display:flex;
+.test {
+  border: solid green;
+  height: 22px;
+  display: flex;
   justify-content: space-evenly;
-
 }
-.savingsBlock{
-  border:solid white;
-  display:flex;
+.spacer {
+  height: 200px;
+}
+.cafeController {
+  border: 0.2px solid white;
+  display: flex;
   justify-content: space-evenly;
-  font-size:45px;
+}
+.savingsBlock {
+  border: solid white;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 45px;
 }
 
-.insertPH{
-  border: .2px solid white;
-  margin:.3em;
-  width:40px;
-  color:burlywood;
-  text-align:center;
-  
+.insertPH {
+  border: 0.2px solid white;
+  margin: 0.3em;
+  width: 40px;
+  color: burlywood;
+  text-align: center;
 }
-.scoreboard{
-  border:solid black;
-  color:burlywood;
-  
+.scoreboard {
+  border: solid black;
+  color: burlywood;
+
   /* display:flex; */
   justify-content: space-between;
   background-color: black;
 }
 
-.formContainer{
-  border:solid peru;
-  width:100%;
-  text-align:center;
-  background-image:url('https://static.wixstatic.com/media/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png/v1/fill/w_524,h_264,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png');
+.formContainer {
+  border: solid peru;
+  width: 100%;
+  text-align: center;
+  background-image: url("https://static.wixstatic.com/media/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png/v1/fill/w_524,h_264,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png");
   /* padding:12px; */
-
 }
 
-.playerStart{
-  text-align:right;
+.playerStart {
+  text-align: right;
 }
 .game-container {
   position: relative;
@@ -200,7 +213,7 @@ body{
   border: 2px solid black;
   overflow: hidden;
   background-color: burlywood;
-  margin:1em;
+  margin: 1em;
 }
 
 .movable {
@@ -226,59 +239,62 @@ body{
   border-radius: 50%;
 }
 
-.woffordContainer{
-  border:solid black;
-  /* height:32px; */
-  margin:1em;
-}
-.local{
+
+.local {
   /* border:solid navy; */
-  margin:1em;
+  margin: 1em;
 }
-.north,.south{
+.north,
+.south {
   /* border:solid black; */
   /* height:22px; */
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
-  margin:1em;
+  margin: 1em;
 }
-.selectItem{
+.selectItem {
   border: 6px double black;
-  width:40%;
-  color:burlywood;
-  font-size:12px;
-  text-align:center
+  width: 40%;
+  color: burlywood;
+  font-size: 12px;
+  text-align: center;
 }
-.selectItem:hover{
-  border:.2px solid black;
-  width:40%;
-  text-align:center;
-  -webkit-box-shadow: 1px 6px 16px 3px #834315; 
-box-shadow: 1px 6px 16px 3px #834315;
+.selectItem:hover {
+  border: 0.2px solid black;
+  width: 40%;
+  text-align: center;
+  -webkit-box-shadow: 1px 6px 16px 3px #834315;
+  box-shadow: 1px 6px 16px 3px #834315;
 }
 
-.shadowScrn{
-  text-align:center;
-  color:white;
-}
-.employeePic{
-  width:100%;
-}
-.gameUpper{
-  margin:2em;
-  text-align:center;
-  font-size:16px;
-}
-.meanMug{
-height:225px;
-}
-.sza{
-  /* border:solid red; */
-  position:absolute;
+.shadowScrn {
   text-align: center;
-  width:150px;
-  margin-left:33%;
-  color:white;
-  height:32px;
-  margin-top:15%;
+  color: white;
+}
+.employeePic {
+  width: 100%;
+}
+.gameUpper {
+  margin: 2em;
+  text-align: center;
+  font-size: 16px;
+}
+.meanMug {
+  height: 225px;
+}
+.sza {
+  /* border:solid red; */
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  margin-left: 33%;
+  color: white;
+  height: 32px;
+  margin-top: 15%;
+}
+.subMain {
+  border:solid black;
+  
+  color: burlywood;
+  width:70%;
 }

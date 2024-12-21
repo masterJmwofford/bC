@@ -19,23 +19,27 @@
       <div class="hiddenTool"></div>
     </div>
     <div class="navContainer">
-      <div class="tabContainer">
-        <div class="navTab">About Us</div>
-        <div class="navTab">Invest</div>
-      </div>
-
       <img
         src="https://static.wixstatic.com/media/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png/v1/fill/w_524,h_264,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png"
         alt=""
         class="logo"
       />
-
-      <div class="tabContainer">
-        <div class="navTab">Locations</div>
-        <div class="navTab">Contact</div>
-      </div>
+      <div class="subMain">
+        <img src="" alt="" class="cart">
+      </div>     
     </div>
-
+  
+    <!-- <img
+      src="https://static.wixstatic.com/media/85280f_22f29842a4254d11856930de4eabbf1d~mv2.jpg/v1/fit/w_610,h_406,q_75/85280f_22f29842a4254d11856930de4eabbf1d~mv2.webp"
+      alt=""
+      class="employeePic"
+    /> -->
+    <div class="tabContainer">
+      <div class="navTab">About Us</div>
+      <div class="navTab">Products</div>
+      <div class="navTab">Locations</div>
+    </div>
+  
 
     <div class="cafeHold">
       <img
@@ -43,40 +47,47 @@
         alt=""
         class="splasher"
       />
+     
       <div class="holderContainer">
-      
-
-        <div class="formContainer">
-          <div class="sza"></div>
-          <img class="meanMug" src="https://static.vecteezy.com/system/resources/previews/023/438/465/non_2x/coffee-to-go-isolated-illustration-ai-generative-free-png.png">
-
+        <div class="woffordContainer">
+          <div class="local">
+            <div class="north">
+              <div class="selectItem" onclick="shareInfo(infoDump.locations)">
+                Locations
+              </div>
+              <div class="selectItem" onclick="shareInfo(infoDump.contact)">
+                Contact
+              </div>
+            </div>
+            <div class="shadowScrn"></div>
+            <div class="south">
+              <div class="selectItem" onclick="shareInfo(infoDump.testimonials)">
+                Products
+              </div>
+              <div class="selectItem" onclick="shareInfo(infoDump.hoursOp)">
+                Testimonials
+              </div>
+            </div>
+          </div>
         </div>
+       
       </div>
+  
+    </div>
+    <div class="formContainer">
+      <div class="sza"></div>
+      <img
+        class="meanMug"
+        src="https://static.vecteezy.com/system/resources/previews/023/438/465/non_2x/coffee-to-go-isolated-illustration-ai-generative-free-png.png"
+      />
+    </div> 
+    <div class="scoreboard">
+      <h1 class="gameUpper">
+        Click To Play Interactive Game for In-Store Discounts
+      </h1>
+      <button>Play Now</button>
     </div>
 
-    <img src="https://static.wixstatic.com/media/85280f_22f29842a4254d11856930de4eabbf1d~mv2.jpg/v1/fit/w_610,h_406,q_75/85280f_22f29842a4254d11856930de4eabbf1d~mv2.webp" alt="" class="employeePic">
-   <div class="woffordContainer">
-    <div class="local">
-      <div class="north">
-        <div class="selectItem" onclick="shareInfo(infoDump.locations)">Locations</div>
-        <div class="selectItem" onclick="shareInfo(infoDump.contact)">Contact</div>
-      </div>
-      <div class="shadowScrn">
-        
-      </div>
-      <div class="south">
-        <div class="selectItem" onclick="shareInfo(infoDump.testimonials)">Products</div>
-        <div class="selectItem" onclick="shareInfo(infoDump.hoursOp)">Testimonials</div>
-      </div>
-    </div>
-
-   </div>
-   <div class="scoreboard">
-    
-    <h1 class="gameUpper">Click To Play Interactive Game for In-Store Discounts</h1>
-    <button >Play Now</button>
-    </div>
-   
     <div class="cafeController">
       <div class="game-container">
         <img
@@ -94,11 +105,6 @@
         <div class="promo-code-display"></div>
       </div>
     </div>
-  
-
-
-
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
