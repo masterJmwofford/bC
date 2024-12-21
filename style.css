@@ -311,7 +311,8 @@ body {
   width:90%;
   border-width:.2px;
 border-radius:22px;
-
+background-image:url('https://i.gifer.com/origin/e6/e6e1a052277f8e381ab7b8250493c017.gif');
+background-size: cover;
 }
 .logoBank{
   /* border:solid burlywood; */
