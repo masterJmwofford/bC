@@ -22,7 +22,7 @@
 }
 
 body{
-  padding:1em;
+  padding:.5em;
 }
 @media (max-width: 1490px) {
   body {
@@ -65,7 +65,7 @@ body{
     width:50%;
   }
   .holderContainer{
-    border:solid red;
+
     display:block;
     width:100%;
   }
@@ -277,7 +277,7 @@ height:225px;
   position:absolute;
   text-align: center;
   width:150px;
-  margin-left:30%;
+  margin-left:33%;
   color:white;
   height:32px;
   margin-top:15%;
