@@ -181,10 +181,9 @@
 
 .formContainer{
   border:solid peru;
-  
-  width:100%;
+  width:50%;
   text-align:center;
-  padding:12px;
+  /* padding:12px; */
 
 }
 
@@ -244,7 +243,7 @@
   border: 6px double black;
   width:40%;
   color:burlywood;
-  font-size:22px;
+  font-size:12px;
   text-align:center
 }
 .selectItem:hover{
@@ -266,4 +265,17 @@ box-shadow: 1px 6px 16px 3px #834315;
   margin:2em;
   text-align:center;
   font-size:16px;
+}
+.meanMug{
+height:225px;
+}
+.sza{
+  /* border:solid red; */
+  position:absolute;
+  text-align: center;
+  width:120px;
+  margin-left:7em;
+  color:white;
+  height:32px;
+  margin-top:5em;
 }

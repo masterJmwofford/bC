@@ -5,7 +5,7 @@ let userPlays = 0
 let cup = document.querySelector(".cuppa");
 let bean = document.querySelector(".bean");
 let hiddenScreen = document.querySelector('.shadowScrn')
-let formHold = document.querySelector('.formContainer')
+let formHold = document.querySelector('.sza')
 if(userPlays > 3 ){
     cup.remove()
 }
@@ -25,6 +25,7 @@ const dailyAffirmations = [
     "I am growing and becoming a better version of myself.",
     "I am deserving of all the wonderful things life has to offer."
   ];
+//   https://static.wixstatic.com/media/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png/v1/fill/w_524,h_264,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png
 
 const infoDump ={
     locations: ["Historic Lakewood", "Morehouse College"],
