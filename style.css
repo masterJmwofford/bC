@@ -20,7 +20,7 @@
 }
 
 body {
-  border:solid burlywood;
+  border: solid burlywood;
   padding: 0.5em;
 }
 @media (max-width: 1490px) {
@@ -48,8 +48,30 @@ body {
   .woffordContainer {
     /* border: solid black; */
     /* height:32px; */
-    width:100%;
+    width: 100%;
     margin-top: 4em;
+  }
+  .logoBank {
+    border: 0.2px solid burlywood;
+    width: auto;
+    align-items: center;
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logoGod {
+    display: flex;
+    justify-content: space-evenly;
+    border: 0.2px solid white;
+    margin: 1em;
+  }
+  .viewContainer{
+    border:solid burlywood;
+    width:60%;
+    border-width:.2px;
+  border-radius:22px;
+  background-image:url('https://i.gifer.com/origin/e6/e6e1a052277f8e381ab7b8250493c017.gif');
+  background-size: cover;
   }
 }
 @media (max-width: 990px) {
@@ -76,8 +98,29 @@ body {
   .woffordContainer {
     /* border: solid black; */
     /* height:32px; */
-    width:100%;
+    width: 100%;
     margin-top: 4em;
+  }
+  .logoBank {
+    border: 0.2px solid burlywood;
+    width: 40%;
+    align-items: center;
+    padding: 2px;
+    display: block;
+  }
+  .logoGod {
+    display: flex;
+    justify-content: space-evenly;
+    border: 0.2px solid white;
+    margin: 1em;
+  }
+  .viewContainer {
+    border: solid burlywood;
+    width: 60%;
+    border-width: 0.2px;
+    border-radius: 22px;
+    background-image: url("https://i.gifer.com/origin/e6/e6e1a052277f8e381ab7b8250493c017.gif");
+    background-size: cover;
   }
 }
 @media (max-width: 690px) {
@@ -106,8 +149,28 @@ body {
   .woffordContainer {
     /* border: solid black; */
     /* height:32px; */
-    width:100%;
+    width: 100%;
     margin-top: 0;
+  }
+  .logoBank {
+    border: 0.2px solid burlywood;
+    width: auto;
+    align-items: center;
+    padding: 2px;
+    display: block;
+  }
+  .logoGod {
+    display: block;
+    /* border: 0.2px solid white; */
+    margin: 0;
+  }
+  .viewContainer {
+    border: solid burlywood;
+    width: 90%;
+    border-width: 0.2px;
+    border-radius: 22px;
+    background-image: url("https://i.gifer.com/origin/e6/e6e1a052277f8e381ab7b8250493c017.gif");
+    background-size: cover;
   }
 }
 
@@ -120,7 +183,7 @@ body {
 .tabContainer {
   /* border:solid red; */
   display: flex;
-  color:burlywood;
+  color: burlywood;
   justify-content: space-around;
   width: 105%;
 }
@@ -197,7 +260,7 @@ body {
 }
 
 .formContainer {
-  border:solid black;
+  border: solid black;
   width: 100%;
   text-align: center;
   background-image: url("https://static.wixstatic.com/media/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png/v1/fill/w_524,h_264,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png");
@@ -239,7 +302,6 @@ body {
   font-weight: bold;
   border-radius: 50%;
 }
-
 
 .local {
   /* border:solid navy; */
@@ -294,47 +356,32 @@ body {
   margin-top: 15%;
 }
 .subMain {
-  border:solid black;
-  
+  border: solid black;
+
   color: burlywood;
-  width:70%;
+  width: 70%;
 }
-.spaceGod{
-  border: .2px solid black;
-  margin:2em;
-  display:flex;
-  height:44vh;
-  padding:1em;
+.spaceGod {
+  border: 0.2px solid black;
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+  /* height:44vh; */
+  padding: 1em;
 }
-.viewContainer{
-  border:solid burlywood;
-  width:90%;
-  border-width:.2px;
-border-radius:22px;
-background-image:url('https://i.gifer.com/origin/e6/e6e1a052277f8e381ab7b8250493c017.gif');
-background-size: cover;
-}
-.logoBank{
+
+.logoGod:hover {
   /* border:solid burlywood; */
   align-items: center;
-  padding:2px;
+  color: burlywood;
 }
-.logoGod:hover{
-  /* border:solid burlywood; */
-  align-items: center;
-  color:burlywood;
-}
-.godImg{
+.godImg {
   /* border:solid red; */
-  height:40px;
-  width:40px;
+  height: 40px;
+  width: 40px;
   align-items: center;
 }
-.godTxt{
-  font-size:12px;
-  text-align:center;
-}
-.logoGod{
-  margin-top:26px;
-  
+.godTxt {
+  font-size: 12px;
+  text-align: center;
 }
