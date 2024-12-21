@@ -94,7 +94,7 @@
 }
 
 .navContainer {
-  border: 0.2px solid black;
+  border: 0.2px solid white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -121,7 +121,7 @@
   display: none;
 }
 .optionContainer {
-  border: 0.2px solid black;
+  border: 0.2px solid white;
   height: 55vh;
   margin: 1.2em;
 }
@@ -150,16 +150,16 @@
     height:200px;
 }
 .cafeController{
-  border:solid black;
+  border:.2px solid white;
   display:flex;
   justify-content: space-evenly;
 
 }
 .savingsBlock{
-  border:solid peru;
+  border:solid white;
   display:flex;
   justify-content: space-evenly;
-  font-size:25px;
+  font-size:45px;
 }
 
 .insertPH{
@@ -171,7 +171,7 @@
   
 }
 .scoreboard{
-  border:solid white;
+  border:solid black;
   color:burlywood;
   
   /* display:flex; */
@@ -198,6 +198,7 @@
   border: 2px solid black;
   overflow: hidden;
   background-color: burlywood;
+  margin:1em;
 }
 
 .movable {
@@ -224,24 +225,26 @@
 }
 
 .woffordContainer{
-  /* border:solid black; */
+  border:solid black;
   /* height:32px; */
   margin:1em;
 }
 .local{
   /* border:solid navy; */
-  /* margin:1em; */
+  margin:1em;
 }
 .north,.south{
-  /* border:solid blue; */
+  /* border:solid black; */
   /* height:22px; */
   display:flex;
   justify-content: space-evenly;
   margin:1em;
 }
 .selectItem{
-  border:.2px solid black;
+  border: 6px double black;
   width:40%;
+  color:burlywood;
+  font-size:22px;
   text-align:center
 }
 .selectItem:hover{
@@ -258,4 +261,9 @@ box-shadow: 1px 6px 16px 3px #834315;
 }
 .employeePic{
   width:100%;
+}
+.gameUpper{
+  margin:2em;
+  text-align:center;
+  font-size:16px;
 }
