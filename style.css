@@ -24,7 +24,8 @@
 
 @media (max-width: 1490px) {
   body {
-    background-color: black;
+    font-family:Cinzel;
+    background-color: rgb(109, 71, 40);
   }
   .coffeeCup {
     opacity: 0.3;
@@ -46,7 +47,8 @@
 }
 @media (max-width: 990px) {
   body {
-    background-color: burlywood;
+    font-family:Cinzel;
+    background-color: rgb(109, 71, 40);
   }
   .coffeeCup {
     opacity: 0.3;
@@ -68,7 +70,9 @@
 }
 @media (max-width: 690px) {
   body {
-    background-color: peru;
+    background-color: rgb(109, 71, 40);
+    color:white;
+    font-family:Cinzel;
   }
   .coffeeCup {
     opacity: 0.3;
@@ -251,4 +255,7 @@ box-shadow: 1px 6px 16px 3px #834315;
 .shadowScrn{
   text-align:center;
   color:white;
+}
+.employeePic{
+  width:100%;
 }

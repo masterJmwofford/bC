@@ -1,4 +1,4 @@
-alert("Will Continue Posting Updates for the 3X BlackCoffee Dope Hoodie....  ")
+// alert("Will Continue Posting Updates for the 3X BlackCoffee Dope Hoodie....  ")
 let screen = document.querySelector(".optionContainer");
 let score = 0
 let userPlays = 0
@@ -54,40 +54,6 @@ const generateAffirmation = ()=>{
     console.log(quote)
     formHold.innerHTML = quote;
 }
-
-function trackAndAlertOverlap(selector1, selector2) {
-    const element1 = document.querySelector(selector1);
-    const element2 = document.querySelector(selector2);
-
-    if (!element1 || !element2) {
-        console.error("One or both elements not found. Check the selectors.");
-        return;
-    }
-
-    function checkOverlap() {
-        const rect1 = element1.getBoundingClientRect();
-        const rect2 = element2.getBoundingClientRect();
-
-        // Check if their x and y coordinates overlap
-        if (
-            Math.round(rect1.x) === Math.round(rect2.x) ||
-            Math.round(rect1.y) === Math.round(rect2.y)
-        ) {
-            score += .5
-            updateScore()
-           
-        }
-    }
-
-    // Use an interval to continuously check for overlap
-    const intervalId = setInterval(checkOverlap, 1);
-
-    // Return a function to stop tracking when needed
-    return () => clearInterval(intervalId);
-}
-
-// Example usage:
-const stopTracking = trackAndAlertOverlap(".catcherCup", ".coffeebean");
 
 // To stop tracking later, call stopTracking
 
@@ -230,7 +196,7 @@ const moveFallingObjects = () => {
 // Movable Image Movement
 const movePrimaryImage = (event) => {
     const key = event.key;
-    const step = 20; // Movement step
+    const step = 10; // Movement step
     const rect = primaryImage.getBoundingClientRect();
     const containerRect = container.getBoundingClientRect();
 
