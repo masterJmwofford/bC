@@ -300,7 +300,40 @@ body {
   width:70%;
 }
 .spaceGod{
-  border:solid black;
+  border: .2px solid black;
   margin:2em;
+  display:flex;
   height:44vh;
+  padding:1em;
+}
+.viewContainer{
+  border:solid burlywood;
+  width:90%;
+  border-width:.2px;
+border-radius:22px;
+
+}
+.logoBank{
+  /* border:solid burlywood; */
+  align-items: center;
+  padding:2px;
+}
+.logoGod:hover{
+  /* border:solid burlywood; */
+  align-items: center;
+  color:burlywood;
+}
+.godImg{
+  /* border:solid red; */
+  height:40px;
+  width:40px;
+  align-items: center;
+}
+.godTxt{
+  font-size:12px;
+  text-align:center;
+}
+.logoGod{
+  margin-top:26px;
+  
 }
