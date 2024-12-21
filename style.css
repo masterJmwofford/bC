@@ -21,7 +21,9 @@
   
 }
 
-
+body{
+  padding:1em;
+}
 @media (max-width: 1490px) {
   body {
     font-family:Cinzel;
@@ -52,7 +54,7 @@
   }
   .coffeeCup {
     opacity: 0.3;
-    width: 100%;
+    width: auto;
     height:auto;
   }
   .cafeHold{
@@ -63,9 +65,9 @@
     width:50%;
   }
   .holderContainer{
-    border:solid black;
+    border:solid red;
     display:block;
-    width:60%;
+    width:100%;
   }
 }
 @media (max-width: 690px) {
@@ -76,7 +78,7 @@
   }
   .coffeeCup {
     opacity: 0.3;
-    width: 50%;
+    width: auto;
     height:auto;
   }
   .cafeHold{
@@ -181,8 +183,9 @@
 
 .formContainer{
   border:solid peru;
-  width:50%;
+  width:100%;
   text-align:center;
+  background-image:url('https://static.wixstatic.com/media/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png/v1/fill/w_524,h_264,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png');
   /* padding:12px; */
 
 }
@@ -274,7 +277,7 @@ height:225px;
   position:absolute;
   text-align: center;
   width:150px;
-  margin-left:8%;
+  margin-left:33%;
   color:white;
   height:32px;
   margin-top:15%;
