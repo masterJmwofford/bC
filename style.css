@@ -103,7 +103,7 @@ body {
     width: 100%;
   }
   .woffordContainer {
-    border: solid black;
+    /* border: solid black; */
     /* height:32px; */
     width:100%;
     margin-top: 0;
@@ -111,7 +111,7 @@ body {
 }
 
 .navContainer {
-  border: 0.2px solid white;
+  /* border: 0.2px solid white; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -196,7 +196,7 @@ body {
 }
 
 .formContainer {
-  border: solid peru;
+  
   width: 100%;
   text-align: center;
   background-image: url("https://static.wixstatic.com/media/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png/v1/fill/w_524,h_264,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png");
@@ -297,4 +297,9 @@ body {
   
   color: burlywood;
   width:70%;
+}
+.spaceGod{
+  border:solid black;
+  margin:2em;
+  height:44vh;
 }
