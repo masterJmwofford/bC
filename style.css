@@ -421,3 +421,26 @@ body {
   font-size: 12px;
   text-align: center;
 }
+
+.spaceGod2{
+  /* border:solid black; */
+  height:auto;
+  margin:1em;
+}
+.poster{
+  border: 6px double beige;
+  width:100%;
+}
+.bein{
+  text-align:center;
+  margin:.3em;
+}
+.bein2{
+  text-align: center;
+}
+.fontdiner-swanky-regular {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:beige
+}
