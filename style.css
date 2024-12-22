@@ -423,9 +423,11 @@ body {
 }
 
 .spaceGod2{
-  /* border:solid black; */
+  border:solid black;
   height:auto;
+  padding:2em;
   margin:1em;
+  display:block;
 }
 .poster{
   border: 6px double beige;
@@ -437,6 +439,7 @@ body {
 }
 .bein2{
   text-align: center;
+  margin:.3em;
 }
 .fontdiner-swanky-regular {
   font-family: "Fontdiner Swanky", serif;
