@@ -418,10 +418,17 @@ body {
   align-items: center;
 }
 .godTxt {
-  font-size: 12px;
-  text-align: center;
-}
+  /* border:solid red; */
+  font-size: 18px;
+  width:60%;
+  margin-top:12px;
+  text-align: right;
+  color:burlywood;
 
+}
+#magicScreen{
+  background-color:black;
+}
 .spaceGod2{
   border:solid black;
   height:auto;
@@ -445,7 +452,6 @@ body {
   font-family: "Fontdiner Swanky", serif;
   font-weight: 400;
   font-style: normal;
-  color:beige
 }
 .poster:hover{
   -webkit-box-shadow: 1px 6px 16px 3px #d69c72;
