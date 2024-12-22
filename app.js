@@ -28,7 +28,7 @@ const dailyAffirmations = [
 //   https://static.wixstatic.com/media/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png/v1/fill/w_524,h_264,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/85280f_714295dcf05a49079fb30f84eca48b6f~mv2_d_2084_1251_s_2.png
 
 const infoDump ={
-    locations: ["Historic Lakewood", "Morehouse College"],
+    locations: ["Historic Lakewood"],
     contact: "000-000-0000",
     testimonials: "Good Vibes, Great Coffee",
     hoursOp: "Monday - Friday (7A - 6P) "
