@@ -447,3 +447,7 @@ body {
   font-style: normal;
   color:beige
 }
+.poster:hover{
+  -webkit-box-shadow: 1px 6px 16px 3px #d69c72;
+  box-shadow: 1px 6px 16px 3px #df935d;
+}

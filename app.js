@@ -1,4 +1,4 @@
-alert("LockedN => Mon[12*23*24")
+
 let screen = document.querySelector(".optionContainer");
 let score = 0
 let userPlays = 0
